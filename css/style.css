@@ -1,0 +1,16 @@
+.nav {
+  padding: 20px 100px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.nav-item a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 20px;
+}
