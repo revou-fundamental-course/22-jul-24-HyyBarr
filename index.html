@@ -12,7 +12,7 @@
       <div class="navbar">
         <img src="assets/Icon.svg" alt="Icon" style="width: 50px; height: auto" />
         <div class="button">
-          <a href="#">Home</a>
+          <a href="#Main">Home</a>
           <a href="#">Our Package</a>
           <a href="#">Contact Us</a>
         </div>
@@ -20,7 +20,72 @@
     </section>
     <!-- header end -->
     <hr />
-
+    <!-- Main Start -->
+    <section id="Main">
+      <div class="motto">
+        <h1>Your Trusted Travel Agent's</h1>
+        <p>Your happiness is our hapiness</p>
+      </div>
+      <div class="container">
+        <div class="col-1">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="assets/NTT.jpg" style="width: 100%" />
+              <div class="text">Nusa Tenggara Timur</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="assets/BROMO.jpg" style="width: 100%" />
+              <div class="text">Bromo</div>
+            </div>
+            <div class="mySlides fade">
+              <img src="assets/BALI.jpg" style="width: 100%" />
+              <div class="text">Bali</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <div class="article">
+            <i>"Liburan jadi menyenangkan bersama Travel<br />Agentku."</i>
+          </div>
+          <div class="profile">
+            <div class="col-img">
+              <img src="assets/person.png" />
+            </div>
+            <div class="col-profile">
+              <strong style="font-size: 17px; font-weight: 700">Florence Hughes</strong>
+              <br />
+              <i style="font-size: 12px; color: #808080a7">Ibu Rumah Tangga, 28</i>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="contact">
+            <h3></h3>
+            <p></p>
+          </div>
+          <div class="form">
+            <label for="name">Your Name :</label><br />
+            <input type="text" id="name" placeholder="First and Last Name" required /><br />
+            <label for="mail">Email Address :</label><br />
+            <input type="text" id="mail" placeholder="example@email.com" required /><br />
+            <label for="what">What are you interested in?</label><br />
+            <select name="what" id="what">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Main End -->
     <script src="js/script.js"></script>
   </body>
 </html>
