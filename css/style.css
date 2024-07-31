@@ -7,7 +7,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 15px;
 }
 
 .button a {
@@ -24,7 +23,7 @@ body {
 .motto {
   display: flex;
   height: 40vh;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
@@ -291,4 +290,10 @@ body {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
