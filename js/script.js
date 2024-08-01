@@ -1,38 +1,30 @@
-// slider
-let slideIndex = 1;
-showSlides(slideIndex);
+//sliders image
+let slideIndex = 0;
+showSlides();
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function showSlides() {
+  const sliders = document.querySelectorAll('.mySlides');
+  for (let i = 0; i < sliders.length; i++) {
+    sliders[i].style.display = 'none';
+  }
+  if (slideIndex >= sliders.length) {
+    slideIndex = 0;
+  }
+
+  sliders[slideIndex].style.display = 'block';
+  slideIndex++;
+  setTimeout(showSlides, 2000);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName('mySlides');
-  let dots = document.getElementsByClassName('dot');
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' active', '');
-  }
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
-}
-
-// Button Alert
+// Form Alert
 function myFunction() {
-  alert('Data Sudah Kami Terima');
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
+
+  if (name == '' || email == '') {
+    alert('Data tidak boleh kosong');
+    return false;
+  } else {
+    alert('Data sudah kami terima');
+  }
 }
